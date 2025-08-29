@@ -1,1 +1,154 @@
+/* Général */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+}
 
+/* Barre latérale fixe améliorée */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #1e293b;
+  padding: 2em;
+  flex-shrink: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar p {
+  color: #94a3b8;
+  margin-bottom: 2em;
+}
+
+/* Contenu principal décalé */
+main {
+  margin-left: 250px; /* même largeur que la sidebar */
+  padding: 2em;
+  flex: 1;
+}
+
+/* Pour éviter que le contenu passe sous la barre */
+main {
+  flex: 1;
+  padding: 2em;
+  margin-left: 200px;      /* ← espace réservé à la barre */
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+nav a {
+  color: #f1f5f9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #334155;
+}
+
+/* Section d'accueil centrée */
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 12px;
+  margin-bottom: 3em;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.3em;
+  color: #38bdf8;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #94a3b8;
+}
+
+.cta-button {
+  margin-top: 1.5em;
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 0.8em 1.5em;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0ea5e9;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 3em 2em;
+  background-color: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.1);
+  margin-bottom: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  color: #38bdf8;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  color: #94a3b8;
+  margin-top: 1.5em;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 14.98%;
+  background-color: #1e293b;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: static;
+    height: auto;
+    width: 100%;
+    box-shadow: none;
+  }
+}
