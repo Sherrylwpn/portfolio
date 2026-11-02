@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sherryl TAURAATUA — Portfolio BTS SIO</title>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <title>Sherryl TAURAATUA — Portfolio BTS SIO SLAM</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Coloration syntaxique des extraits de code (facultatif) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -49,7 +54,7 @@
 
     <!-- HERO -->
     <section id="accueil" class="section hero-section">
-      <div class="hero-tag">Portfolio 2024–2025</div>
+      <div class="hero-tag">Portfolio 2025–2026</div>
       <h1 class="hero-title">
         <span class="line">Développeuse</span>
         <span class="line accent-text">Web &amp; Logiciel</span>
@@ -71,7 +76,9 @@
       <h2 class="section-title">Qui suis-je ?</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>Moi, c’est <strong>Sherryl TAURAATUA</strong>, 18 ans et actuellement étudiante en BTS SIO option SLAM. Comme beaucoup, je ne savais pas trop quoi faire de ma vie… alors je me suis dit : “Pourquoi pas l’informatique ?”. Et finalement, entre le code, les applications et les bases de données, je me suis découvert une vraie passion pour transformer des lignes incompréhensibles en projets qui fonctionnent (presque) toujours du premier coup !</p>          <p>Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est une formation en deux ans orientée vers les métiers du numérique, avec deux spécialités :</p>
+          <p>Étudiante en <strong>BTS SIO option SLAM</strong>, je me forme à la conception et au développement d'applications web et logicielles, de la modélisation d'une base de données jusqu'à la mise en ligne. J'aime transformer un besoin concret en un outil fiable, lisible et simple à utiliser.</p>
+          <p>Mes projets d'établissement et mes quatre stages m'ont appris à travailler avec méthode, à documenter mon travail et à respecter des délais. Mon engagement comme cadet de la Gendarmerie a renforcé mon sens de la rigueur et du travail en équipe.</p>
+          <p>Le <strong>BTS SIO</strong> (Services Informatiques aux Organisations) est une formation en deux ans orientée vers les métiers du numérique, avec deux options :</p>
           <div class="option-cards">
             <div class="option-card active">
               <div class="option-dot"></div>
@@ -91,11 +98,11 @@
         </div>
         <div class="about-stats">
           <div class="stat-card">
-            <span class="stat-num">3</span>
+            <span class="stat-num">4</span>
             <span class="stat-label">Stages réalisés</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">8</span>
+            <span class="stat-num" id="countProjets">7</span>
             <span class="stat-label">Projets menés</span>
           </div>
         </div>
@@ -117,6 +124,14 @@
             <div class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
+                <span class="timeline-date">Juin 2026</span>
+                <strong>Lycée polyvalent Jules Garnier</strong>
+                <span>Stage en entreprise</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
                 <span class="timeline-date">Oct. 2025</span>
                 <strong>Direction du Numérique et de la Modernisation </strong>
                 <span>Stage en entreprise</span>
@@ -126,7 +141,7 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <span class="timeline-date">Nov. 2023</span>
-                <strong>Syndicat Mixte</strong>
+                <strong>Syndicat Mixte des Transport Interubain</strong>
                 <span>Stage en entreprise</span>
               </div>
             </div>
@@ -255,131 +270,8 @@
     <section id="projets" class="section">
       <div class="section-label">Projets</div>
       <h2 class="section-title">Réalisations</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <div class="project-num">01</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Dev</span>
-              <span>Web</span>
-            </div>
-            <h3>Suivie stagiaire</h3>
-            <p>Site utilisé par les administrateurs d'un lycée pour noter la progression des stagiaires. </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <div class="project-num">02</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Python</span>
-              <span>Data</span>
-            </div>
-            <h3>Dataviz Challenge 2025</h3>
-            <p>Participation à un challenge de visualisation de données, analyse et représentation graphique d'un jeu de données réel.</p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">03</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Dev</span>
-              <span>Web</span>
-            </div>
-            <h3>Jeu « Semaine du numérique »</h3>
-            <p>Création d'un jeu interactif dans le cadre de la Semaine du numérique, destiné à sensibiliser à l'informatique.</p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">04</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>AngularJs</span>
-              <span>Data</span>
-            </div>
-            <h3>Projet Station N</h3>
-            <p>Participation à un projet de la station N sur toute les immatriculations en Nouvelle-Calédonie.</p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">05</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>No code</span>
-            </div>
-            <h3>Site du Lycée</h3>
-            <p>Rénovation du site du Lycée Dick Ukeiwe avec utilisation de plateforme en no code.</p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">06</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Php</span>
-              <span>Html</span>
-            </div>
-            <h3>Portefolio</h3>
-            <p>Pratiquement tous ceux que j'ai pu faire.</p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">07</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Php</span>
-              <span>Data</span>
-              <span>Html</span>
-            </div>
-            <h3>Projet Hôtel</h3>
-            <p>Site web qui recense les hôtels de la Nouvelle-Calédonie.</p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-num">08</div>
-          <div class="project-body">
-            <div class="project-tags">
-              <span>Java</span>
-              <span>Data</span>
-              <span>Html</span>
-            </div>
-            <h3>Caillou évasion</h3>
-            <p>Application recensant tous les endroits emblématiques de la Nouvelle-Calédonie </p>
-          </div>
-          <div class="project-footer">
-            <span class="project-status active">Réalisé</span>
-          </div>
-        </div>
-
-      </div>
+      <p class="section-intro">Cliquez sur un projet pour afficher sa présentation et des extraits de code.</p>
+      <div class="projects-grid" id="projectList"></div>
     </section>
 
     <!-- VEILLE TECHNO -->
@@ -500,9 +392,7 @@
       <div class="section-label">Contact</div>
       <h2 class="section-title">Mes coordonnées</h2>
 
-      <p class="contact-intro">
-        Voici mes coordonnées professionnelles.
-      </p>
+      <p class="contact-intro">Voici mes coordonnées professionnelles.</p>
 
       <div class="contact-cards static-contacts">
 
@@ -521,7 +411,7 @@
         <div class="contact-card static">
           <div class="contact-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
               <polyline points="22,6 12,13 2,6"/>
             </svg>
           </div>
@@ -535,105 +425,27 @@
     </section>
 
     <footer class="site-footer">
-      <p>© 2025 Sherryl TAURAATUA · BTS SIO SLAM · Nouvelle-Calédonie</p>
+      <p>© 2026 Sherryl TAURAATUA · BTS SIO SLAM · Nouvelle-Calédonie</p>
     </footer>
 
   </main>
 
-  <script>
-    // Active nav link on scroll
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
+  <!-- POP-UP DÉTAIL PROJET -->
+  <dialog id="projectModal" class="modal" aria-labelledby="modalTitle">
+    <header class="modal-head">
+      <div>
+        <p class="modal-type" id="modalType"></p>
+        <h3 class="modal-title" id="modalTitle"></h3>
+      </div>
+      <button type="button" class="modal-close" id="modalClose" aria-label="Fermer la fenêtre">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+      </button>
+    </header>
+    <div class="modal-body" id="modalBody"></div>
+  </dialog>
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + entry.target.id) {
-              link.classList.add('active');
-            }
-          });
-        }
-      });
-    }, { threshold: 0.4 });
-
-    sections.forEach(s => observer.observe(s));
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(a.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Fade-in sections
-    const fadeObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.section').forEach(s => fadeObserver.observe(s));
-
-    // Carrousel veille technologique
-    (function () {
-      const root = document.getElementById('veilleCarousel');
-      if (!root) return;
-      const track = root.querySelector('.veille-track');
-      const viewport = root.querySelector('.veille-viewport');
-      const cards = Array.from(track.children);
-      const prev = root.querySelector('[data-dir="prev"]');
-      const next = root.querySelector('[data-dir="next"]');
-      const counter = root.querySelector('.veille-counter');
-      const fill = root.querySelector('.veille-bar-fill');
-      const pad = n => String(n).padStart(2, '0');
-      let index = 0;
-
-      const perView = () => parseInt(getComputedStyle(root).getPropertyValue('--per-view'), 10) || 1;
-      const maxIndex = () => Math.max(0, cards.length - perView());
-
-      function update() {
-        const pv = perView();
-        index = Math.min(Math.max(index, 0), maxIndex());
-        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-        const step = cards[0].getBoundingClientRect().width + gap;
-        track.style.transform = 'translateX(' + (-index * step) + 'px)';
-
-        const last = Math.min(index + pv, cards.length);
-        counter.textContent = (pv > 1 ? pad(index + 1) + '–' + pad(last) : pad(index + 1)) + ' / ' + pad(cards.length);
-        fill.style.width = (last / cards.length * 100) + '%';
-
-        prev.disabled = index === 0;
-        next.disabled = index === maxIndex();
-      }
-
-      prev.addEventListener('click', () => { index--; update(); });
-      next.addEventListener('click', () => { index++; update(); });
-
-      root.addEventListener('keydown', e => {
-        if (e.key === 'ArrowLeft') { index--; update(); }
-        if (e.key === 'ArrowRight') { index++; update(); }
-      });
-
-      // Swipe tactile
-      let startX = null;
-      viewport.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-      viewport.addEventListener('touchend', e => {
-        if (startX === null) return;
-        const dx = e.changedTouches[0].clientX - startX;
-        if (Math.abs(dx) > 40) { index += dx < 0 ? 1 : -1; update(); }
-        startX = null;
-      });
-
-      window.addEventListener('resize', update);
-      window.addEventListener('load', update);
-      update();
-    })();
-  </script>
+  <script src="projets.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
