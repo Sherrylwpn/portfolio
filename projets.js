@@ -43,14 +43,7 @@ const PROJETS = [
     technos: ["Développement web", "Stage"],
     lien: { url: "", label: "" },
     images: [],
-    snippets: [
-      {
-        label: "Extrait 1",
-        fichier: "nom-du-fichier.ext",
-        langage: "plaintext",
-        code: `// Remplace ce texte par un extrait de ton code.`
-      }
-    ]
+    snippets: []
   },
   {
     id: "jeu-numerique",
@@ -64,14 +57,7 @@ const PROJETS = [
     technos: ["Développement web", "Prévention"],
     lien: { url: "", label: "" },
     images: [],
-    snippets: [
-      {
-        label: "Extrait 1",
-        fichier: "nom-du-fichier.ext",
-        langage: "plaintext",
-        code: `// Remplace ce texte par un extrait de ton code.`
-      }
-    ]
+    snippets: []
   },
   {
     id: "station-n",
@@ -85,14 +71,7 @@ const PROJETS = [
     technos: ["AngularJS", "Données"],
     lien: { url: "", label: "" },
     images: [],
-    snippets: [
-      {
-        label: "Extrait 1",
-        fichier: "nom-du-fichier.js",
-        langage: "javascript",
-        code: `// Remplace ce texte par un extrait de ton code.`
-      }
-    ]
+    snippets: []
   },
   {
     id: "site-lycee",
@@ -123,7 +102,7 @@ const PROJETS = [
     snippets: [
       {
         label: "Carrousel (JS)",
-        fichier: "index.html — veille technologique",
+        fichier: "script.js — veille technologique",
         langage: "javascript",
         code: `function update() {
   const pv = perView();
@@ -144,12 +123,13 @@ const PROJETS = [
         fichier: "style.css",
         langage: "css",
         code: `:root {
-  --paper: #f3f5f7;
+  --bg: #f7f3fd;
   --surface: #ffffff;
-  --ink: #12202b;
-  --accent: #0e5e73;
-  --font-title: "Newsreader", Georgia, serif;
-  --font-body: "Public Sans", system-ui, sans-serif;
+  --text: #33284a;
+  --accent: #8a5cc8;
+  --accent-2: #6b43a6;
+  --font-title: "Syne", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
 }`
       }
     ]
@@ -171,8 +151,19 @@ const PROJETS = [
         label: "Extrait 1",
         fichier: "nom-du-fichier.php",
         langage: "php",
-        code: `<?php
-// Remplace ce texte par un extrait de ton code.`
+        code: `try {
+    $pdo = getDB();
+    $hotels = $pdo->query("
+        SELECT id, nom_hotel, adresse, province, proximite, photo,
+               email, telephone, jardin, wifi_gratuit, piscine,
+               vue_mer, activites, description_activites
+        FROM formulaire_hotel
+        ORDER BY id ASC
+    ")->fetchAll();
+} catch (PDOException $e) {
+    $hotels = [];
+    error_log($e->getMessage());
+}`
       }
     ]
   },
@@ -188,13 +179,6 @@ const PROJETS = [
     technos: ["Java", "HTML", "Base de données"],
     lien: { url: "", label: "" },
     images: [],
-    snippets: [
-      {
-        label: "Extrait 1",
-        fichier: "NomDeLaClasse.java",
-        langage: "java",
-        code: `// Remplace ce texte par un extrait de ton code.`
-      }
-    ]
+    snippets: []
   }
 ];
